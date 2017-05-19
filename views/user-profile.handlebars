@@ -1,0 +1,45 @@
+
+<style type="text/css">
+
+
+    .user {
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin-top: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 280px;
+    }
+
+    @media (min-width: 500px) {
+        .user {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
+
+
+{{#user}}
+<section class="user">
+    <h1>Hi {{username}}!</h1>
+
+    <p>Here is your user information:</p>
+
+    <h2>Name(s)</h2>
+
+    <p><strong>Display Name:</strong> {{display_name}}</p>
+    <p><strong>Family Name:</strong> {{name.family_name}}</p>
+    <p><strong>Given Name:</strong> {{name.given_name}}</p>
+    <p><strong>Middle Name:</strong> {{name.middle_name}}</p>
+
+
+    <h2>Contact Information</h2>
+
+    <p><strong>Email(s):</strong> {{#emails}} {{value}}{{/emails}}</p>
+    <p><strong>Organisation:</strong> {{organisation_name}}</p>
+</section>
+{{/user}}

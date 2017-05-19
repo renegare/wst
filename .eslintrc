@@ -1,0 +1,48 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+    },
+    "es6": true,
+    "browser": true,
+    "rules": {
+      "dot-notation": [ 2, { allowKeywords: true } ],
+      "array-bracket-spacing": [ "error", "always" ],
+      "arrow-parens": [ "error", "as-needed" ],
+      "arrow-spacing": [ "error", { "before": true, "after": true } ],
+      "brace-style": [ "warn", "1tbs" ],
+      "block-scoped-var": [ "error" ],
+      "comma-spacing": [ "error", { "before": false, "after": true } ],
+      "eqeqeq": [ "error", "allow-null" ],
+      "dot-location": [ "error", "property" ],
+      "eol-last": [ "error" ],
+      "indent": [ "error", 2, { "SwitchCase": 1 } ],
+      "keyword-spacing": [ "error", { "before": true, "after": true } ],
+      "key-spacing": [ "error", {
+        "singleLine": { "beforeColon": false, "afterColon": true, "mode": "strict" },
+        "multiLine": { "beforeColon": false, "afterColon": true, "mode": "minimum" }
+      } ],
+      "linebreak-style": [ "error", "unix" ],
+      "no-dupe-args": [ "error" ],
+      "no-dupe-keys": [ "error" ],
+      "no-extend-native": [ "error" ],
+      "no-implied-eval": [ "error" ],
+      "no-multiple-empty-lines": [ "error", { "max": 1, "maxEOF": 1, "maxBOF": 0 } ],
+      "no-multi-spaces": [ "error", { "exceptions": { "Property": true } } ],
+      "no-unreachable": [ "error" ],
+      "object-curly-spacing": [ "error", "always" ],
+      "operator-linebreak": [ "error", "after", { "overrides": { "+=": "none", "-=": "none", "*=": "none", "/=": "none" } } ],
+      "padded-blocks": [ "warn", "never" ],
+      "quotes": [ "error", "single" ],
+      "semi": [ "error", "never" ],
+      "space-before-function-paren" : [ "error", { "anonymous": "always", "named": "never" } ],
+      "valid-jsdoc": [ "warn", { "prefer": { "return": "returns" }, "preferType": {
+        "string": "String", "object": "Object", "number": "Number", "bool": "Boolean", "boolean": "Boolean"
+      } } ],
+      "vars-on-top": [ "warn" ],
+      "curly": [ "error", "multi" ],
+      "no-use-before-define": 0,
+      "no-unused-expressions": 0,
+      "no-unused-vars": "error",
+    }
+}
